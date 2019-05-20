@@ -2,7 +2,7 @@
 
 This is a Google Maps demo project that will allow a user to search for an address or city, and see nearby Parks. The technologies used are Gridsome/Vue to create the Single-Page Application, Google Maps, Tailwind CSS
 
-### 1. Install Gridsome CLI tool if you don't have
+### 1. Install Gridsome CLI tool if you don't have it installed already
 
 `npm install --global @gridsome/cli`
 

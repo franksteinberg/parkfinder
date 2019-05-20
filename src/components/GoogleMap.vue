@@ -8,7 +8,7 @@
         <input
           placeholder="Search"
           ref="autocomplete"
-          class="search-location block w-full sm:w-1/2 mx-auto mt-3 p-2 text-lg leading-relaxed rounded shadow shadow-lg"
+          class="search-location block w-full lg:w-1/2 mx-auto mt-3 p-2 text-lg leading-relaxed rounded shadow shadow-lg"
           onfocus="value = ''" 
           type="text"
           @place_changed="setPlace"
@@ -16,11 +16,17 @@
       </label>
     </div>
     <div v-show="currentPlace" class="flex flex-col lg:flex-row block">
-      <div class="google-map flex-grow mx-auto m-4 w-full bg-gray-400 shadow shadow-lg" :id="mapName"></div>
+      <div class="google-map h-40vh sm:h-65vh flex-grow mx-auto m-4 w-full bg-gray-400 shadow shadow-lg" :id="mapName"></div>
       <div v-if="parkResultsFound" class="w-full lg:w-2/5 lg:m-4 lg:pl-3 lg:pr-6 lg:h-65vh lg:overflow-y-auto">
         <park-result v-for="park in parks" v-bind:key="park.id" :park="park"/>
       </div>
     </div>
+    <div v-show="currentPlace && !parkResultsFound" class="mx-auto w-full lg:w-4/5 lg:max-w-5xl">
+        <span class="mx-auto text-xl md:text-2xl font-light text-teal-800">
+            Sorry, no parks found in this area. Possible issues are searched area is too large (like a zip code)
+            or there simply are no parks in that area. Please try another search.
+        </span>
+      </div>
   </div>
 </template>
 
@@ -179,9 +185,3 @@ export default {
   },
 }
 </script>
-
-<style scoped>
-  .google-map {
-    height: 65vh;
-  }
-</style>

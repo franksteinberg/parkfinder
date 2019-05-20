@@ -6,6 +6,10 @@ This is a Google Maps demo project that will allow a user to search for an addre
 
 `npm install --global @gridsome/cli`
 
-### 2. Serve the Demo
+### 2. Install project dependencies
+
+`yarn`
+
+### 3. Serve the Demo
 
 `gridsome develop` to serve the demo locally

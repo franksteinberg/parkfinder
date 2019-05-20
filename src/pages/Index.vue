@@ -11,7 +11,7 @@
 <script>
 export default {
   metaInfo: {
-    title: 'Park Hopper',
+    title: 'Home',
   },
 }
 </script>

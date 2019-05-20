@@ -1,14 +1,11 @@
-# Default starter for Gridsome
+# Park Finder
 
-This is the project you get when you run `gridsome create new-project`.
+This is a Google Maps demo project that will allow a user to search for an address or city, and see nearby Parks. The technologies used are Gridsome/Vue to create the Single-Page Application, Google Maps, Tailwind CSS
 
 ### 1. Install Gridsome CLI tool if you don't have
 
 `npm install --global @gridsome/cli`
 
-### 2. Create a Gridsome project
+### 2. Serve the Demo
 
-1. `gridsome create my-gridsome-site` to install default starter
-2. `cd my-gridsome-site` to open the folder
-3. `gridsome develop` to start a local dev server at `http://localhost:8080`
-4. Happy coding 🎉🙌
+`gridsome develop` to serve the demo locally

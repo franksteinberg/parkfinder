@@ -37,7 +37,7 @@
 </template>
 
 <script>
-import gmapsInit from '../utils/gmaps'
+import gmapsInit from '~/utils/gmaps'
 import ParkResult from './ParkResult.vue'
 
 export default {

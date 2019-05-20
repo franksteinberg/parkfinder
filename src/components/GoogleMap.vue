@@ -26,7 +26,13 @@
             Sorry, no parks found in this area. Possible issues are searched area is too large (like a zip code)
             or there simply are no parks in that area. Please try another search.
         </span>
-      </div>
+    </div>
+    <div v-show="!currentPlace" class="my-5 mx-auto w-full lg:w-4/5 lg:max-w-5xl">
+        <g-image src="~/assets/img/undraw_a_day_at_the_park_owg1.svg" class="mx-auto m-5 w-48 sm:w-64"/>
+        <span class="block text-xl md:text-3xl font-light text-teal-800">
+            Welcome! Please search for an address or city to find great parks nearby!
+        </span>
+    </div>
   </div>
 </template>
 

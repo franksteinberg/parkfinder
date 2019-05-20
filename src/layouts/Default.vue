@@ -8,7 +8,7 @@
     <div class="flex-grow p-4">
       <slot />
     </div>
-    <footer class="bg-teal-700 text-white h-16 p-2">
+    <footer class="bg-teal-700 text-white p-2">
       <div class="container mx-4 flex items-center justify-between py-4">
         <div>Copyright 2019 by Frank Steinberg. All rights reserved.</div>
       </div>

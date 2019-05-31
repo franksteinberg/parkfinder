@@ -2,7 +2,7 @@
 
 This is a Google Maps demo project that will allow a user to search for an address or city, and see nearby Parks. The technologies used are Gridsome/Vue to create the Single-Page Application, Google Maps, Tailwind CSS
 
-### 1. Install Gridsome CLI tool if you don't have
+### 1. Install Gridsome CLI tool if you don't have it installed already
 
 `npm install --global @gridsome/cli`
 
@@ -38,6 +38,7 @@ Gridsome should serve the site on `localhost:8080`. Once loaded, you will be pro
 
 * [Using the Google Maps API with Vue.js (by Markus Oberlehner)](https://markus.oberlehner.net/blog/using-the-google-maps-api-with-vue/)
 * [Tailwind and PurgeCSS Config for Gridsome (by Brandon Pittman)](https://www.brandonpittman.net/tailwind-purge-config/)
+* [Google Maps Markers](https://github.com/Concept211/Google-Maps-Markers)
 * [Google Maps API Documentation](https://developers.google.com/maps/documentation/)
 * [Tailwind CSS Documentation](https://tailwindcss.com/docs/)
 * [Gridsome Documentation](https://gridsome.org/docs/)

@@ -3,6 +3,7 @@
 const API_KEY = 'AIzaSyA63tJcq4iz6_K0DBd-3iqegPDKPZRlt6E';
 const CALLBACK_NAME = 'gmapsCallback';
 
+let initialized = !!window.google;
 let resolveInitPromise;
 let rejectInitPromise;
 // This promise handles the initialization
@@ -16,8 +17,9 @@ export default function init() {
   // If Google Maps already is initialized
   // the `initPromise` should get resolved
   // eventually.
-  if (!!window.google) return initPromise;
+  if (initialized) return initPromise;
 
+  initialized = true;
   // The callback function is called by
   // the Google Maps script if it is
   // successfully loaded.
